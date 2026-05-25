@@ -1,0 +1,48 @@
+# ==========================================
+# Data Directories (Large Metagenomics & scRNA-seq)
+# ==========================================
+data/
+*.rds
+*.RData
+*.Rda
+
+# ==========================================
+# Security & Credentials
+# ==========================================
+*accessKeys.csv
+.env
+.Renviron
+.Rprofile
+
+# ==========================================
+# Reference bins (PPTX, PDF, DOCX)
+# ==========================================
+meta
+*.pdf
+*.pptx
+*.docx
+*.xlsx
+
+# ==========================================
+# Temporary & Compiled Output Files
+# ==========================================
+project_summary.pdf
+project_summary_compiled.md
+images/
+results/
+*.png
+*.jpg
+*.jpeg
+
+# ==========================================
+# R Session & Workspace files
+# ==========================================
+.Rproj.user/
+.Rhistory
+.RDataTmp
+
+# ==========================================
+# Python (Compilation Script Outputs)
+# ==========================================
+__pycache__/
+*.pyc
