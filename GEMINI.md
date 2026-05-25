@@ -11,6 +11,7 @@ The MicroEndo project focuses on integrating the endometrial microbiome and sing
   - `src/`: Analytical R scripts.
 
 ## Setup & Conventions
-- **Datasets:** The 1.88 GB `.rds` single-cell object and the metagenomic tables must be placed directly into the `data/` directory. These are excluded from version control.
+- **Environment:** R scripts, which require significant resources, will be run on the **garnatxa** server. The main working directory on garnatxa is `/home/patienza/cocrea`.
+- **Datasets:** Data is stored in `/storage/gge/cocrea_endometrio`. A symlink to this path must be created as the `data/` directory in the repository. The 1.88 GB `.rds` single-cell object and metagenomic tables reside here and are excluded from version control.
 - **Credentials:** Any required active credentials (like AWS keys for S3) should be managed via environment variables (e.g. `.Renviron`) and never committed.
 - **Workflow:** All actions must adhere to the PRAR (Perceive, Reason, Act, Refine) cycle. Always test changes locally and verify biological coordinate accuracy.
